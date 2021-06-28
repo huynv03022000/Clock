@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            margin: 0 auto;
+        }
+        
+        .center {
+            color: chartreuse;
+            margin-top: 200px;
+            padding-left: 35%;
+            text-align: center;
+        }
+        
+        .Main {
+            height: 950px;
+            width: 100%;
+            margin-top: 100px;
+        }
+        
+        .result {
+            height: auto;
+        }
+        
+        label {
+            color: snow;
+        }
+        
+        input {
+            color: red;
+        }
+        
+        .baothuc {
+            display: none;
+        }
+        
+        #off {
+            display: none;
+        }
+    </style>
+
+    <div class="container Main">
+        <div class="row">
+            <div class="col-md-4">
+
+                <button type="button" onclick="bamgio()" class="btn btn-warning bam">Bấm Giờ</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" onclick="baothuc()" class="btn btn-danger">Báo Thức</button>
+
+                <div class="baothuc">
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
+                    <br>
+                    <button type="button" class="btn btn-primary" onclick="setAlarm()">Cài Đặt</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary" id="off" onclick="OffAlarm()">Tắt chuông</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success">Giờ Hiện tại</button>
+                <div class="row " style="margin-top: 50px;">
+                    <div>
+                        <button onclick="start()" type="button" class="btn btn-primary"> Start</button>
+                    </div>
+                    <div>
+                        <button onclick="stop()" style="margin-left: 40px;" type="button" class="btn btn-primary">Stop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <h1 id="clock">!@:$$:%%</h1>
+            </div>
+
+        </div>
+        <div class="result">
+            <div id="result" style="font-size: 30px; color: chartreuse;">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 
+    <div>
+        <h1 onclick="start()"> Start</h1>
+    </div>
+    <div>
+        <h1 onclick="stop()">Stop</h1>
+    </div> -->
+    <script>
+    </script>
+    <script src="/JS/main.js"></script>
+</body>
+
+</html>
